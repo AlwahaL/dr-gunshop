@@ -38,7 +38,7 @@ AddEventHandler('dr:BuyGuns', function(index)
             end
         else
             local item = string.upper(Config.Guns[index].item)
-            if Config.WeightSytsem then
+            if Config.WeightSystem then
                 if xPlayer.canCarryItem(item, 1) then
                     xPlayer.removeMoney(price)
                     xPlayer.addInventoryItem(item, 1)
