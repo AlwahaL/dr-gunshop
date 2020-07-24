@@ -19,7 +19,7 @@ AddEventHandler('dr:BuyGuns', function(index)
     if getMoney >= price then
         if Config.ESXInventory then
             local item = Config.Guns[index].item
-            if Config.WeightSytsem then
+            if Config.WeightSystem then
                 if xPlayer.canCarryItem(item, 1) then
                     xPlayer.removeMoney(price)
                     xPlayer.addWeapon(item, 1)
