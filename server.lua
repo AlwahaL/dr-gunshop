@@ -25,10 +25,10 @@ AddEventHandler('dr:BuyGuns', function(index)
                     xPlayer.addWeapon(item, 1)
                 else
                     if Config.SendAlert then
-                        TriggerClientEvent('mythic_notify:client:SendAlert', _source, { type = 'turuncu', text = 'Üstün dolu.', length = 5000 })
+                        TriggerClientEvent('mythic_notify:client:SendAlert', _source, { type = 'error', text = 'Üstün dolu.', length = 5000 })
                         return
                     else
-                        TriggerClientEvent('mythic_notify:client:DoHudText', _source, { type = 'turuncu', text = 'Üstün dolu.', length = 5000 })
+                        TriggerClientEvent('mythic_notify:client:DoHudText', _source, { type = 'error', text = 'Üstün dolu.', length = 5000 })
                         return
                     end
                 end
@@ -44,10 +44,10 @@ AddEventHandler('dr:BuyGuns', function(index)
                     xPlayer.addInventoryItem(item, 1)
                 else
                     if Config.SendAlert then
-                        TriggerClientEvent('mythic_notify:client:SendAlert', _source, { type = 'turuncu', text = 'Üstün dolu.', length = 5000 })
+                        TriggerClientEvent('mythic_notify:client:SendAlert', _source, { type = 'error', text = 'Üstün dolu.', length = 5000 })
                         return
                     else
-                        TriggerClientEvent('mythic_notify:client:DoHudText', _source, { type = 'turuncu', text = 'Üstün dolu.', length = 5000 })
+                        TriggerClientEvent('mythic_notify:client:DoHudText', _source, { type = 'error', text = 'Üstün dolu.', length = 5000 })
                         return
                     end
                 end
