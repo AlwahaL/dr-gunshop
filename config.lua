@@ -11,7 +11,7 @@ Config = {}
 
 Config.SendAlert = true
 Config.ESXInventory = false
-Config.WeightSytsem = true
+Config.WeightSystem = true
 
 Config.UseJob = false
 Config.Job = "ambulance"
