@@ -15,7 +15,7 @@ Citizen.CreateThread(function()
     while ESX == nil do
       TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end)
       Citizen.Wait(0)
-	  end
+    end
 	
 	  while ESX.GetPlayerData().job == nil do
         Citizen.Wait(10)
@@ -31,7 +31,10 @@ end)
 
 
 CreateThread(function()
-    Citizen.Wait(100)
+    while ESX == nil do
+      TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end)
+      Citizen.Wait(0)
+    end
     while true do
         local sleep = 4000
         local _source = source
